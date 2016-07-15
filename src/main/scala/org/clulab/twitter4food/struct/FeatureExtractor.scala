@@ -274,7 +274,7 @@ class FeatureExtractor (
 
     val filtered = if (hc.nonEmpty) {
       val humanPredicted = (followers, followers.map(hc.get.classify)).zipped
-      humanPredicted.filter{ case (follower, predicted) => predicted == "human"}._1
+      humanPredicted.filter{ case (follower, predicted) => predicted == "org"}._1
     } else followers
 
     // Aggregate the counter for the followers using the other features being used
