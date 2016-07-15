@@ -183,7 +183,7 @@ class FeatureExtractor (
       // combined scores should range 0-1 if datumScaling
       if (datumScaling) scaleByDatum(counter, 0.0, 1.0)
 
-      counter += appendPrefix("follower-", fc) + appendPrefix("main-", mc)
+      // counter += appendPrefix("follower-", fc) + appendPrefix("main-", mc)
     }
 
     // remove zero values for sparse rep
